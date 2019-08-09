@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D02EF2E22FD101000C13189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D02EF2D22FD101000C13189 /* AppDelegate.swift */; };
+		2D02EF3022FD101000C13189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D02EF2F22FD101000C13189 /* ViewController.swift */; };
+		2D02EF3322FD101000C13189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D02EF3122FD101000C13189 /* Main.storyboard */; };
+		2D02EF3522FD101100C13189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D02EF3422FD101100C13189 /* Assets.xcassets */; };
+		2D02EF3822FD101100C13189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D02EF3622FD101100C13189 /* LaunchScreen.storyboard */; };
+		2D02EF4322FD101100C13189 /* ParticleBluetoothiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D02EF4222FD101100C13189 /* ParticleBluetoothiOSTests.swift */; };
+		2D02EF4E22FD101100C13189 /* ParticleBluetoothiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D02EF4D22FD101100C13189 /* ParticleBluetoothiOSUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D02EF3F22FD101100C13189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D02EF2222FD101000C13189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02EF2922FD101000C13189;
+			remoteInfo = ParticleBluetoothiOS;
+		};
+		2D02EF4A22FD101100C13189 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D02EF2222FD101000C13189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D02EF2922FD101000C13189;
+			remoteInfo = ParticleBluetoothiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D02EF2A22FD101000C13189 /* ParticleBluetoothiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParticleBluetoothiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02EF2D22FD101000C13189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2D02EF2F22FD101000C13189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D02EF3222FD101000C13189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D02EF3422FD101100C13189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D02EF3722FD101100C13189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D02EF3922FD101100C13189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D02EF3E22FD101100C13189 /* ParticleBluetoothiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleBluetoothiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02EF4222FD101100C13189 /* ParticleBluetoothiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleBluetoothiOSTests.swift; sourceTree = "<group>"; };
+		2D02EF4422FD101100C13189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D02EF4922FD101100C13189 /* ParticleBluetoothiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleBluetoothiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02EF4D22FD101100C13189 /* ParticleBluetoothiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleBluetoothiOSUITests.swift; sourceTree = "<group>"; };
+		2D02EF4F22FD101100C13189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D02EF2722FD101000C13189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02EF3B22FD101100C13189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02EF4622FD101100C13189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D02EF2122FD101000C13189 = {
+			isa = PBXGroup;
+			children = (
+				2D02EF2C22FD101000C13189 /* ParticleBluetoothiOS */,
+				2D02EF4122FD101100C13189 /* ParticleBluetoothiOSTests */,
+				2D02EF4C22FD101100C13189 /* ParticleBluetoothiOSUITests */,
+				2D02EF2B22FD101000C13189 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D02EF2B22FD101000C13189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D02EF2A22FD101000C13189 /* ParticleBluetoothiOS.app */,
+				2D02EF3E22FD101100C13189 /* ParticleBluetoothiOSTests.xctest */,
+				2D02EF4922FD101100C13189 /* ParticleBluetoothiOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D02EF2C22FD101000C13189 /* ParticleBluetoothiOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D02EF2D22FD101000C13189 /* AppDelegate.swift */,
+				2D02EF2F22FD101000C13189 /* ViewController.swift */,
+				2D02EF3122FD101000C13189 /* Main.storyboard */,
+				2D02EF3422FD101100C13189 /* Assets.xcassets */,
+				2D02EF3622FD101100C13189 /* LaunchScreen.storyboard */,
+				2D02EF3922FD101100C13189 /* Info.plist */,
+			);
+			path = ParticleBluetoothiOS;
+			sourceTree = "<group>";
+		};
+		2D02EF4122FD101100C13189 /* ParticleBluetoothiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D02EF4222FD101100C13189 /* ParticleBluetoothiOSTests.swift */,
+				2D02EF4422FD101100C13189 /* Info.plist */,
+			);
+			path = ParticleBluetoothiOSTests;
+			sourceTree = "<group>";
+		};
+		2D02EF4C22FD101100C13189 /* ParticleBluetoothiOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2D02EF4D22FD101100C13189 /* ParticleBluetoothiOSUITests.swift */,
+				2D02EF4F22FD101100C13189 /* Info.plist */,
+			);
+			path = ParticleBluetoothiOSUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D02EF2922FD101000C13189 /* ParticleBluetoothiOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02EF5222FD101100C13189 /* Build configuration list for PBXNativeTarget "ParticleBluetoothiOS" */;
+			buildPhases = (
+				2D02EF2622FD101000C13189 /* Sources */,
+				2D02EF2722FD101000C13189 /* Frameworks */,
+				2D02EF2822FD101000C13189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ParticleBluetoothiOS;
+			productName = ParticleBluetoothiOS;
+			productReference = 2D02EF2A22FD101000C13189 /* ParticleBluetoothiOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D02EF3D22FD101100C13189 /* ParticleBluetoothiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02EF5522FD101100C13189 /* Build configuration list for PBXNativeTarget "ParticleBluetoothiOSTests" */;
+			buildPhases = (
+				2D02EF3A22FD101100C13189 /* Sources */,
+				2D02EF3B22FD101100C13189 /* Frameworks */,
+				2D02EF3C22FD101100C13189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02EF4022FD101100C13189 /* PBXTargetDependency */,
+			);
+			name = ParticleBluetoothiOSTests;
+			productName = ParticleBluetoothiOSTests;
+			productReference = 2D02EF3E22FD101100C13189 /* ParticleBluetoothiOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2D02EF4822FD101100C13189 /* ParticleBluetoothiOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D02EF5822FD101100C13189 /* Build configuration list for PBXNativeTarget "ParticleBluetoothiOSUITests" */;
+			buildPhases = (
+				2D02EF4522FD101100C13189 /* Sources */,
+				2D02EF4622FD101100C13189 /* Frameworks */,
+				2D02EF4722FD101100C13189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D02EF4B22FD101100C13189 /* PBXTargetDependency */,
+			);
+			name = ParticleBluetoothiOSUITests;
+			productName = ParticleBluetoothiOSUITests;
+			productReference = 2D02EF4922FD101100C13189 /* ParticleBluetoothiOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D02EF2222FD101000C13189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jared Wolff";
+				TargetAttributes = {
+					2D02EF2922FD101000C13189 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					2D02EF3D22FD101100C13189 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2D02EF2922FD101000C13189;
+					};
+					2D02EF4822FD101100C13189 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 2D02EF2922FD101000C13189;
+					};
+				};
+			};
+			buildConfigurationList = 2D02EF2522FD101000C13189 /* Build configuration list for PBXProject "ParticleBluetoothiOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D02EF2122FD101000C13189;
+			productRefGroup = 2D02EF2B22FD101000C13189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D02EF2922FD101000C13189 /* ParticleBluetoothiOS */,
+				2D02EF3D22FD101100C13189 /* ParticleBluetoothiOSTests */,
+				2D02EF4822FD101100C13189 /* ParticleBluetoothiOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D02EF2822FD101000C13189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02EF3822FD101100C13189 /* LaunchScreen.storyboard in Resources */,
+				2D02EF3522FD101100C13189 /* Assets.xcassets in Resources */,
+				2D02EF3322FD101000C13189 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02EF3C22FD101100C13189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02EF4722FD101100C13189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D02EF2622FD101000C13189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02EF3022FD101000C13189 /* ViewController.swift in Sources */,
+				2D02EF2E22FD101000C13189 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02EF3A22FD101100C13189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02EF4322FD101100C13189 /* ParticleBluetoothiOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D02EF4522FD101100C13189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D02EF4E22FD101100C13189 /* ParticleBluetoothiOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D02EF4022FD101100C13189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02EF2922FD101000C13189 /* ParticleBluetoothiOS */;
+			targetProxy = 2D02EF3F22FD101100C13189 /* PBXContainerItemProxy */;
+		};
+		2D02EF4B22FD101100C13189 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D02EF2922FD101000C13189 /* ParticleBluetoothiOS */;
+			targetProxy = 2D02EF4A22FD101100C13189 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D02EF3122FD101000C13189 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D02EF3222FD101000C13189 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D02EF3622FD101100C13189 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D02EF3722FD101100C13189 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D02EF5022FD101100C13189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2D02EF5122FD101100C13189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D02EF5322FD101100C13189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParticleBluetoothiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredwolff.ParticleBluetoothiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D02EF5422FD101100C13189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParticleBluetoothiOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredwolff.ParticleBluetoothiOS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2D02EF5622FD101100C13189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParticleBluetoothiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredwolff.ParticleBluetoothiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParticleBluetoothiOS.app/ParticleBluetoothiOS";
+			};
+			name = Debug;
+		};
+		2D02EF5722FD101100C13189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParticleBluetoothiOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredwolff.ParticleBluetoothiOSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ParticleBluetoothiOS.app/ParticleBluetoothiOS";
+			};
+			name = Release;
+		};
+		2D02EF5922FD101100C13189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParticleBluetoothiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredwolff.ParticleBluetoothiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParticleBluetoothiOS;
+			};
+			name = Debug;
+		};
+		2D02EF5A22FD101100C13189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ParticleBluetoothiOSUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jaredwolff.ParticleBluetoothiOSUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ParticleBluetoothiOS;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D02EF2522FD101000C13189 /* Build configuration list for PBXProject "ParticleBluetoothiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02EF5022FD101100C13189 /* Debug */,
+				2D02EF5122FD101100C13189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02EF5222FD101100C13189 /* Build configuration list for PBXNativeTarget "ParticleBluetoothiOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02EF5322FD101100C13189 /* Debug */,
+				2D02EF5422FD101100C13189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02EF5522FD101100C13189 /* Build configuration list for PBXNativeTarget "ParticleBluetoothiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02EF5622FD101100C13189 /* Debug */,
+				2D02EF5722FD101100C13189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D02EF5822FD101100C13189 /* Build configuration list for PBXNativeTarget "ParticleBluetoothiOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D02EF5922FD101100C13189 /* Debug */,
+				2D02EF5A22FD101100C13189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D02EF2222FD101000C13189 /* Project object */;
+}
