@@ -14,6 +14,7 @@
 		2D02EF3822FD101100C13189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D02EF3622FD101100C13189 /* LaunchScreen.storyboard */; };
 		2D02EF4322FD101100C13189 /* ParticleBluetoothiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D02EF4222FD101100C13189 /* ParticleBluetoothiOSTests.swift */; };
 		2D02EF4E22FD101100C13189 /* ParticleBluetoothiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D02EF4D22FD101100C13189 /* ParticleBluetoothiOSUITests.swift */; };
+		2D02EF6222FD12C500C13189 /* ParticlePerihperal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D02EF6122FD12C500C13189 /* ParticlePerihperal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		2D02EF4922FD101100C13189 /* ParticleBluetoothiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleBluetoothiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02EF4D22FD101100C13189 /* ParticleBluetoothiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticleBluetoothiOSUITests.swift; sourceTree = "<group>"; };
 		2D02EF4F22FD101100C13189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D02EF6122FD12C500C13189 /* ParticlePerihperal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlePerihperal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		2D02EF2C22FD101000C13189 /* ParticleBluetoothiOS */ = {
 			isa = PBXGroup;
 			children = (
+				2D02EF6022FD12B300C13189 /* Models */,
 				2D02EF2D22FD101000C13189 /* AppDelegate.swift */,
 				2D02EF2F22FD101000C13189 /* ViewController.swift */,
 				2D02EF3122FD101000C13189 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				2D02EF4F22FD101100C13189 /* Info.plist */,
 			);
 			path = ParticleBluetoothiOSUITests;
+			sourceTree = "<group>";
+		};
+		2D02EF6022FD12B300C13189 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D02EF6122FD12C500C13189 /* ParticlePerihperal.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D02EF6222FD12C500C13189 /* ParticlePerihperal.swift in Sources */,
 				2D02EF3022FD101000C13189 /* ViewController.swift in Sources */,
 				2D02EF2E22FD101000C13189 /* AppDelegate.swift in Sources */,
 			);
@@ -433,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC2S8UTXK2;
 				INFOPLIST_FILE = ParticleBluetoothiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AC2S8UTXK2;
 				INFOPLIST_FILE = ParticleBluetoothiOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
