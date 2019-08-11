@@ -11,6 +11,16 @@ import CoreBluetooth
 
 class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDelegate {
 
+    // Outlet for sliders
+    @IBOutlet weak var redSlider: UISlider!
+    @IBOutlet weak var greenSlider: UISlider!
+    @IBOutlet weak var blueSlider: UISlider!
+    
+    // Characteristics
+    private var redChar: CBCharacteristic?
+    private var greenChar: CBCharacteristic?
+    private var blueChar: CBCharacteristic?
+    
     // Properties
     private var centralManager: CBCentralManager!
     private var peripheral: CBPeripheral!
@@ -61,6 +71,27 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         }
     }
     
+    func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
+        if peripheral == self.peripheral {
+            print("Disconnected")
+            
+            redSlider.isEnabled = false
+            greenSlider.isEnabled = false
+            blueSlider.isEnabled = false
+            
+            redSlider.value = 0
+            greenSlider.value = 0
+            blueSlider.value = 0
+            
+            self.peripheral = nil
+            
+            // Start scanning again
+            print("Central scanning for", ParticlePeripheral.particleLEDServiceUUID);
+            centralManager.scanForPeripherals(withServices: [ParticlePeripheral.particleLEDServiceUUID],
+                                              options: [CBCentralManagerScanOptionAllowDuplicatesKey : true])
+        }
+    }
+    
     // Handles discovery event
     func peripheral(_ peripheral: CBPeripheral, didDiscoverServices error: Error?) {
         if let services = peripheral.services {
@@ -83,14 +114,63 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
             for characteristic in characteristics {
                 if characteristic.uuid == ParticlePeripheral.redLEDCharacteristicUUID {
                     print("Red LED characteristic found")
+                    
+                    // Set the characteristic
+                    redChar = characteristic
+                    
+                    // Unmask red slider
+                    redSlider.isEnabled = true
                 } else if characteristic.uuid == ParticlePeripheral.greenLEDCharacteristicUUID {
                     print("Green LED characteristic found")
+                    
+                    // Set the characteristic
+                    greenChar = characteristic
+                    
+                    // Unmask green slider
+                    greenSlider.isEnabled = true
                 } else if characteristic.uuid == ParticlePeripheral.blueLEDCharacteristicUUID {
                     print("Blue LED characteristic found");
+                    
+                    // Set the characteristic
+                    blueChar = characteristic
+                    
+                    // Unmask blue slider
+                    blueSlider.isEnabled = true
                 }
             }
         }
     }
 
+    private func witeLEDValueToChar( withCharacteristic characteristic: CBCharacteristic, withValue value: Data) {
+        
+        // Check if it has the write property
+        if characteristic.properties.contains(.writeWithoutResponse) && peripheral != nil {
+            
+            peripheral.writeValue(value, for: characteristic, type: .withoutResponse)
+
+        }
+        
+    }
+
+    @IBAction func redChanged(_ sender: Any) {
+        print("red:",redSlider.value);
+        let slider:UInt8 = UInt8(redSlider.value)
+        witeLEDValueToChar( withCharacteristic: redChar!, withValue: Data([slider]))
+        
+    }
+    
+    @IBAction func greenChanged(_ sender: Any) {
+        print("green:",greenSlider.value);
+        let slider:UInt8 = UInt8(greenSlider.value)
+        witeLEDValueToChar( withCharacteristic: greenChar!, withValue: Data([slider]))
+    }
+    
+    @IBAction func blueChanged(_ sender: Any) {
+        print("blue:",blueSlider.value);
+        let slider:UInt8 = UInt8(blueSlider.value)
+        witeLEDValueToChar( withCharacteristic: blueChar!, withValue: Data([slider]))
+        
+    }
+    
 }
 
