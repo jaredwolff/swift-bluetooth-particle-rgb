@@ -141,7 +141,7 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
         }
     }
 
-    private func witeLEDValueToChar( withCharacteristic characteristic: CBCharacteristic, withValue value: Data) {
+    private func writeLEDValueToChar( withCharacteristic characteristic: CBCharacteristic, withValue value: Data) {
         
         // Check if it has the write property
         if characteristic.properties.contains(.writeWithoutResponse) && peripheral != nil {
@@ -155,20 +155,20 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     @IBAction func redChanged(_ sender: Any) {
         print("red:",redSlider.value);
         let slider:UInt8 = UInt8(redSlider.value)
-        witeLEDValueToChar( withCharacteristic: redChar!, withValue: Data([slider]))
+        writeLEDValueToChar( withCharacteristic: redChar!, withValue: Data([slider]))
         
     }
     
     @IBAction func greenChanged(_ sender: Any) {
         print("green:",greenSlider.value);
         let slider:UInt8 = UInt8(greenSlider.value)
-        witeLEDValueToChar( withCharacteristic: greenChar!, withValue: Data([slider]))
+        writeLEDValueToChar( withCharacteristic: greenChar!, withValue: Data([slider]))
     }
     
     @IBAction func blueChanged(_ sender: Any) {
         print("blue:",blueSlider.value);
         let slider:UInt8 = UInt8(blueSlider.value)
-        witeLEDValueToChar( withCharacteristic: blueChar!, withValue: Data([slider]))
+        writeLEDValueToChar( withCharacteristic: blueChar!, withValue: Data([slider]))
         
     }
     
