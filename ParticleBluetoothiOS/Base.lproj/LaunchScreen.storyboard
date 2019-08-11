@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,9 +15,40 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="5ew-cv-iE7">
+                                <rect key="frame" x="87" y="355" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kng-lm-rZb">
+                                <rect key="frame" x="139" y="491" width="136" height="21"/>
+                                <string key="text">Particle Bluetooth 
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RGB iOS Example" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y2-Jg-Zee">
+                                <rect key="frame" x="139.5" y="520" width="135" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kng-lm-rZb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="38" id="2TE-E7-zsm"/>
+                            <constraint firstItem="5ew-cv-iE7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="3cC-9R-Dd0"/>
+                            <constraint firstItem="Kng-lm-rZb" firstAttribute="trailing" secondItem="7Y2-Jg-Zee" secondAttribute="trailing" constant="1" id="6cg-jz-6s2"/>
+                            <constraint firstItem="7Y2-Jg-Zee" firstAttribute="top" secondItem="Kng-lm-rZb" secondAttribute="bottom" constant="8" symbolic="YES" id="XXr-L4-xUK"/>
+                            <constraint firstItem="Kng-lm-rZb" firstAttribute="top" secondItem="5ew-cv-iE7" secondAttribute="bottom" constant="8" symbolic="YES" id="Yho-u1-dgJ"/>
+                            <constraint firstItem="5ew-cv-iE7" firstAttribute="centerX" secondItem="Kng-lm-rZb" secondAttribute="centerX" id="ZbZ-jZ-psb"/>
+                            <constraint firstItem="5ew-cv-iE7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-98" id="gRN-KA-f24"/>
+                            <constraint firstItem="Kng-lm-rZb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="jP3-Vv-9mg"/>
+                            <constraint firstItem="Kng-lm-rZb" firstAttribute="centerX" secondItem="7Y2-Jg-Zee" secondAttribute="centerX" id="p15-gh-WNs"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -22,4 +57,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Splash.png" width="720" height="720"/>
+    </resources>
 </document>
