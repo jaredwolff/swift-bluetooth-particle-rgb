@@ -15,11 +15,13 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     @IBOutlet weak var redSlider: UISlider!
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
+    @IBOutlet weak var batteryPercentLabel: UILabel!
     
     // Characteristics
     private var redChar: CBCharacteristic?
     private var greenChar: CBCharacteristic?
     private var blueChar: CBCharacteristic?
+    private var battChar: CBCharacteristic?
     
     // Properties
     private var centralManager: CBCentralManager!
@@ -67,7 +69,7 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
     func centralManager(_ central: CBCentralManager, didConnect peripheral: CBPeripheral) {
         if peripheral == self.peripheral {
             print("Connected to your Particle Board")
-            peripheral.discoverServices([ParticlePeripheral.particleLEDServiceUUID])
+            peripheral.discoverServices([ParticlePeripheral.particleLEDServiceUUID,ParticlePeripheral.batteryServiceUUID]);
         }
     }
     
@@ -102,9 +104,32 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
                     peripheral.discoverCharacteristics([ParticlePeripheral.redLEDCharacteristicUUID,
                                                              ParticlePeripheral.greenLEDCharacteristicUUID,
                                                              ParticlePeripheral.blueLEDCharacteristicUUID], for: service)
-                    return
+                }
+                if( service.uuid == ParticlePeripheral.batteryServiceUUID ) {
+                    print("Battery service found")
+                    peripheral.discoverCharacteristics([ParticlePeripheral.batteryCharacteristicUUID], for: service)
                 }
             }
+        }
+    }
+    
+    func peripheral(_ peripheral: CBPeripheral,
+                     didUpdateNotificationStateFor characteristic: CBCharacteristic,
+                     error: Error?) {
+        print("Enabling notify ", characteristic.uuid)
+        
+        if error != nil {
+            print("Enable notify error")
+        }
+    }
+
+    func peripheral(_ peripheral: CBPeripheral,
+                     didUpdateValueFor characteristic: CBCharacteristic,
+                     error: Error?) {
+        if( characteristic == battChar ) {
+            print("Battery:", characteristic.value![0])
+            
+            batteryPercentLabel.text = "\(characteristic.value![0])%"
         }
     }
     
@@ -136,6 +161,14 @@ class ViewController: UIViewController, CBPeripheralDelegate, CBCentralManagerDe
                     
                     // Unmask blue slider
                     blueSlider.isEnabled = true
+                } else if characteristic.uuid == ParticlePeripheral.batteryCharacteristicUUID {
+                    print("Battery characteristic found");
+                    
+                    // Set the char
+                    battChar = characteristic
+                    
+                    // Subscribe to the char.
+                    peripheral.setNotifyValue(true, for: characteristic)
                 }
             }
         }
